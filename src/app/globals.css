@@ -1,0 +1,330 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ========================================
+   FRENCH'S BAKERY — "La Boulangerie Dorée"
+   Custom Theme Configuration
+   ======================================== */
+
+@theme inline {
+  /* Core bakery colors mapped to shadcn/ui tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Bakery-specific custom colors */
+  --color-brioche: #C8873A;
+  --color-brioche-light: #D9A05C;
+  --color-brioche-dark: #A86E28;
+  --color-cafe: #8B5E3C;
+  --color-cafe-light: #A67B5B;
+  --color-parchment: #FDF6EC;
+  --color-flaky: #F5E8D0;
+  --color-raspberry: #C0334D;
+  --color-raspberry-light: #D44D66;
+  --color-espresso: #2B1A0F;
+  --color-espresso-light: #4A3525;
+  --color-herbe: #6B8E6B;
+  --color-herbe-light: #8CB08C;
+  --color-whipped: #FFFDF9;
+
+  /* Font families */
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-playfair);
+  --font-lora: var(--font-lora);
+  --font-cormorant: var(--font-cormorant);
+  --font-caveat: var(--font-caveat);
+  --font-mono: var(--font-geist-mono);
+
+  /* Sidebar tokens */
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  /* Chart colors */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Border radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ========================================
+   Light Theme — Warm Bakery Palette
+   ======================================== */
+:root {
+  --radius: 0.625rem;
+  --background: #FDF6EC;
+  --foreground: #2B1A0F;
+  --card: #F5E8D0;
+  --card-foreground: #2B1A0F;
+  --popover: #FFFDF9;
+  --popover-foreground: #2B1A0F;
+  --primary: #C8873A;
+  --primary-foreground: #FFFDF9;
+  --secondary: #8B5E3C;
+  --secondary-foreground: #FFFDF9;
+  --muted: #F0E4D0;
+  --muted-foreground: #6B5B4A;
+  --accent: #C0334D;
+  --accent-foreground: #FFFDF9;
+  --destructive: #C0334D;
+  --border: #E0D0B8;
+  --input: #E0D0B8;
+  --ring: #C8873A;
+  --chart-1: #C8873A;
+  --chart-2: #8B5E3C;
+  --chart-3: #6B8E6B;
+  --chart-4: #C0334D;
+  --chart-5: #D9A05C;
+  --sidebar: #F5E8D0;
+  --sidebar-foreground: #2B1A0F;
+  --sidebar-primary: #C8873A;
+  --sidebar-primary-foreground: #FFFDF9;
+  --sidebar-accent: #F0E4D0;
+  --sidebar-accent-foreground: #2B1A0F;
+  --sidebar-border: #E0D0B8;
+  --sidebar-ring: #C8873A;
+}
+
+/* ========================================
+   Dark Theme — Warm Evening Bakery
+   ======================================== */
+.dark {
+  --background: #1A110A;
+  --foreground: #F5E8D0;
+  --card: #2B1A0F;
+  --card-foreground: #F5E8D0;
+  --popover: #2B1A0F;
+  --popover-foreground: #F5E8D0;
+  --primary: #D9A05C;
+  --primary-foreground: #2B1A0F;
+  --secondary: #A67B5B;
+  --secondary-foreground: #1A110A;
+  --muted: #3D2B1E;
+  --muted-foreground: #B8A48C;
+  --accent: #D44D66;
+  --accent-foreground: #1A110A;
+  --destructive: #D44D66;
+  --border: #4A3525;
+  --input: #4A3525;
+  --ring: #D9A05C;
+  --chart-1: #D9A05C;
+  --chart-2: #A67B5B;
+  --chart-3: #8CB08C;
+  --chart-4: #D44D66;
+  --chart-5: #C8873A;
+  --sidebar: #2B1A0F;
+  --sidebar-foreground: #F5E8D0;
+  --sidebar-primary: #D9A05C;
+  --sidebar-primary-foreground: #2B1A0F;
+  --sidebar-accent: #3D2B1E;
+  --sidebar-accent-foreground: #F5E8D0;
+  --sidebar-border: #4A3525;
+  --sidebar-ring: #D9A05C;
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ========================================
+   Custom Scrollbar — Bakery Style
+   ======================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5E8D0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8873A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A86E28;
+}
+
+/* ========================================
+   Custom Utility Classes
+   ======================================== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-playfair {
+    font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  }
+  .font-lora {
+    font-family: var(--font-lora), 'Lora', Georgia, serif;
+  }
+  .font-cormorant {
+    font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-caveat {
+    font-family: var(--font-caveat), 'Caveat', cursive;
+  }
+  .font-source {
+    font-family: var(--font-source-sans), 'Source Sans 3', system-ui, sans-serif;
+  }
+}
+
+/* ========================================
+   Chalkboard Texture Effect
+   ======================================== */
+.chalkboard-bg {
+  background-color: #2B3A2B;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(60, 80, 60, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(50, 70, 50, 0.2) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+.chalk-text {
+  color: #F5F0E8;
+  text-shadow:
+    0 0 1px rgba(245, 240, 232, 0.4),
+    0 0 2px rgba(245, 240, 232, 0.2);
+}
+
+/* ========================================
+   Flour Dust Particle Animation
+   ======================================== */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(20px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes gentle-sway {
+  0%, 100% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(200, 135, 58, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(200, 135, 58, 0.2);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes write-in {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-float-up {
+  animation: float-up 8s ease-in infinite;
+}
+
+.animate-gentle-sway {
+  animation: gentle-sway 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* ========================================
+   Gold Divider
+   ======================================== */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #C8873A33 20%,
+    #C8873A 50%,
+    #C8873A33 80%,
+    transparent 100%
+  );
+}
+
+/* ========================================
+   Parchment Texture Overlay
+   ======================================== */
+.parchment-texture {
+  position: relative;
+}
+.parchment-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}

@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Order {
+  id             String   @id @default(cuid())
+  orderType      String   // custom-cake, catering, bring-recipe, bulk
+  occasion       String?
+  size           String?
+  flavor         String?
+  dietary        String?
+  designDescription String?
+  inscription    String?
+  pickupDate     String?
+  pickupTime     String?
+  name           String
+  phone          String
+  email          String
+  status         String   @default("pending") // pending, confirmed, completed, cancelled
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model DailySpecial {
+  id          String   @id @default(cuid())
+  name        String
+  price       String
+  emoji       String   @default("🥐")
+  tag         String   @default("Special")
+  category    String   @default("bakery") // bakery, dessert, restaurant
+  isActive    Boolean  @default(true)
+  displayOrder Int     @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  location  String
+  rating    Int      @default(5)
+  text      String
+  product   String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Flavor {
+  id        String   @id @default(cuid())
+  name      String
+  category  String   // Classic, Fruit, Nut, Seasonal
+  popular   Boolean  @default(false)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
