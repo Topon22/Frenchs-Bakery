@@ -7,12 +7,12 @@ async function main() {
 
   // Seed Daily Specials
   const specialsData = [
-    { name: 'Almond Croissant', price: '$3.50', emoji: '🥐', tag: 'Best Seller', category: 'bakery', displayOrder: 1 },
-    { name: 'Strawberry Coffeecake', price: '$18.00', emoji: '🍰', tag: 'Seasonal', category: 'bakery', displayOrder: 2 },
-    { name: 'Rosemary Sea Salt Boule', price: '$9.00', emoji: '🍞', tag: 'New', category: 'bakery', displayOrder: 3 },
-    { name: 'Seasonal Fruit Tart', price: '$6.50', emoji: '🥧', tag: 'Limited', category: 'dessert', displayOrder: 4 },
-    { name: 'Pain au Chocolat', price: '$3.75', emoji: '🍫', tag: 'Classic', category: 'bakery', displayOrder: 5 },
-    { name: 'Vanilla Bean Éclair', price: '$5.25', emoji: '🧁', tag: 'Fresh', category: 'dessert', displayOrder: 6 },
+    { name: '$1 Cupcakes on Tuesday!', price: '$1.00', emoji: '🧁', tag: 'Tuesday Special', category: 'bakery', displayOrder: 1 },
+    { name: 'Cheese Danish', price: '$3.95', emoji: '🥐', tag: 'Best Seller', category: 'bakery', displayOrder: 2 },
+    { name: 'Wagon Wheel Coffeecake', price: '$13.98+', emoji: '🍰', tag: 'Signature', category: 'bakery', displayOrder: 3 },
+    { name: 'Carrot Cake Slice', price: '$5.50', emoji: '🥕', tag: 'Favorite', category: 'dessert', displayOrder: 4 },
+    { name: 'French Bread', price: '$4.50', emoji: '🥖', tag: 'Fresh Baked', category: 'bakery', displayOrder: 5 },
+    { name: 'Cookies (per dozen)', price: '$12.00', emoji: '🍪', tag: 'Classic', category: 'bakery', displayOrder: 6 },
   ];
 
   for (const special of specialsData) {
@@ -80,12 +80,14 @@ async function main() {
 
   // Seed Testimonials
   const testimonialsData = [
-    { name: 'Sarah M.', location: 'Costa Mesa regular since 2008', rating: 5, text: 'The Wagon-Wheel Coffeecake is a weekly tradition in our house. I\'ve tried the cinnamon, blueberry, and pumpkin spice — they\'re all incredible. French\'s is truly a Costa Mesa treasure.', product: 'Wagon-Wheel Coffeecake' },
-    { name: 'David L.', location: 'Newport Beach', rating: 5, text: 'We ordered a custom wedding cake and it exceeded all expectations. The team was so accommodating and the cake was absolutely stunning.', product: 'Custom Wedding Cake' },
-    { name: 'Maria G.', location: 'Costa Mesa regular since 2015', rating: 5, text: 'I brought in my grandmother\'s recipe for her famous tres leches cake and they nailed it perfectly. The "Bring Your Recipe" service is such a special offering.', product: 'Bring Your Recipe' },
-    { name: 'Tom R.', location: 'Huntington Beach', rating: 5, text: 'Best croissants in Orange County, hands down. Flaky, buttery perfection every single time. Worth every minute of the drive.', product: 'Almond Croissant' },
-    { name: 'Jennifer K.', location: 'Costa Mesa regular since 2012', rating: 5, text: 'French\'s Bakery has been part of our family\'s celebrations for over a decade. Everything is made with such care and quality.', product: 'Birthday Cakes' },
-    { name: 'Mike P.', location: 'Irvine', rating: 5, text: 'Their sourdough boule is incredible — crispy crust, tangy interior. And the French onion soup is the best I\'ve had outside of Paris.', product: 'Sourdough Boule' },
+    { name: 'tweav', location: 'Aliso Viejo', rating: 5, text: 'We always get cakes for special occasions from French\'s. Their cakes are a bit pricey, but worth every penny.', product: 'Custom Cakes' },
+    { name: 'Rebecca W.', location: 'Costa Mesa', rating: 5, text: 'We came for the cookies. We loved them all. Fresh, baked to right consistency, perfect balance of flavors and served with a smile.', product: 'Cookies' },
+    { name: 'Hairycalgrad', location: 'Temecula', rating: 5, text: 'Go on a Tuesday for the $1.00 cupcakes, they are the best.', product: 'Tuesday Cupcakes' },
+    { name: 'Tinaray107', location: 'Utah', rating: 4, text: 'This is by far the best bakery for goodies. Cookies, pastries, cakes. Outrageously delectable.', product: 'Pastries & Cakes' },
+    { name: 'auroracoleman09', location: 'Costa Mesa', rating: 5, text: 'This bakery is one of a kind and has the best selection of Cheese Danishes.', product: 'Cheese Danishes' },
+    { name: 'Yelp Reviewer', location: 'Costa Mesa', rating: 5, text: 'Through the years my wife has had several cakes from French\'s and they have all been delicious. The staff is always friendly, helpful and accommodating.', product: 'Custom Cakes' },
+    { name: 'Yelp Reviewer', location: 'Orange County', rating: 5, text: 'The desserts are wonderful! We purchased carrot cake & it was divine. We also purchased German chocolate cake.', product: 'Carrot Cake' },
+    { name: 'Yelp Reviewer', location: 'Costa Mesa', rating: 5, text: 'Additionally, the French Bread was crispy on the outside and deliciously soft inside. Customer service was extremely nice, samples were offered.', product: 'French Bread' },
   ];
 
   for (let i = 0; i < testimonialsData.length; i++) {

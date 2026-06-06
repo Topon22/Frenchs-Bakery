@@ -8,76 +8,77 @@ import { Badge } from '@/components/ui/badge';
 
 const products = [
   {
-    name: 'Butter Croissant',
+    name: 'Cheese Danish',
     category: 'Pastries',
-    price: '$3.50',
-    description: 'Golden, flaky layers of buttery French pastry perfection',
+    price: '$3.95',
+    description: 'Our best-selling Danish — rich cream cheese filling in flaky puff pastry',
     image: '🥐',
     fresh: true,
     color: 'from-amber-100 to-orange-50',
   },
   {
-    name: 'Wagon-Wheel Coffeecake',
+    name: 'Wagon Wheel Coffeecake',
     category: 'Signature',
-    price: '$18.00',
-    description: 'Our legendary coffeecake available in 40+ incredible flavors',
+    price: '$13.98+',
+    description: 'Our legendary 12-inch round coffeecake — 40+ flavors, serves 10-12',
     image: '🍰',
     fresh: true,
     color: 'from-rose-100 to-pink-50',
   },
   {
-    name: 'Sourdough Boule',
+    name: 'French Bread',
     category: 'Breads',
-    price: '$9.00',
-    description: 'Tangy, crusty artisan sourdough with a chewy interior',
-    image: '🍞',
-    fresh: false,
+    price: '$4.50',
+    description: 'Crispy on the outside, deliciously soft inside — baked fresh daily',
+    image: '🥖',
+    fresh: true,
     color: 'from-yellow-100 to-amber-50',
   },
   {
-    name: 'Lemon Tart',
+    name: 'Carrot Cake',
     category: 'Desserts',
-    price: '$6.50',
-    description: 'Bright citrus curd in a buttery shortbread shell',
-    image: '🍋',
-    fresh: true,
-    color: 'from-lime-100 to-green-50',
-  },
-  {
-    name: 'Almond Croissant',
-    category: 'Pastries',
-    price: '$4.25',
-    description: 'Filled with almond cream and topped with sliced almonds',
-    image: '🥮',
-    fresh: false,
-    color: 'from-amber-100 to-yellow-50',
-  },
-  {
-    name: 'Baguette Tradition',
-    category: 'Breads',
     price: '$5.50',
-    description: 'Crispy crust, airy interior — classic French baguette',
-    image: '🥖',
+    description: 'Divine carrot cake with rich cream cheese frosting — a customer favorite',
+    image: '🥕',
     fresh: true,
     color: 'from-orange-100 to-amber-50',
   },
   {
-    name: 'Chocolate Éclair',
+    name: 'Butter Croissant',
+    category: 'Pastries',
+    price: '$3.50',
+    description: 'Golden, flaky layers of buttery French pastry perfection',
+    image: '🥐',
+    fresh: false,
+    color: 'from-amber-100 to-yellow-50',
+  },
+  {
+    name: 'German Chocolate Cake',
     category: 'Desserts',
     price: '$5.75',
-    description: 'Choux pastry filled with chocolate custard and ganache',
+    description: 'Rich chocolate layers with coconut-pecan frosting — divine',
     image: '🍫',
-    fresh: false,
+    fresh: true,
     color: 'from-stone-100 to-neutral-50',
   },
   {
-    name: 'Pain au Chocolat',
-    category: 'Pastries',
-    price: '$3.75',
-    description: 'Two bars of dark chocolate wrapped in flaky puff pastry',
-    image: '🍫',
+    name: 'Cookies Assortment',
+    category: 'Cookies',
+    price: '$1.00',
+    description: 'Fresh-baked cookies with perfect balance of flavors — $1 each on Tuesdays!',
+    image: '🍪',
     fresh: true,
     color: 'from-amber-100 to-orange-50',
+    tuesdaySpecial: true,
+  },
+  {
+    name: 'Fruit Tart',
+    category: 'Desserts',
+    price: '$6.50',
+    description: 'Fresh seasonal fruit on velvety pastry cream in a buttery shell',
+    image: '🥧',
+    fresh: true,
+    color: 'from-lime-100 to-green-50',
   },
 ];
 
@@ -159,7 +160,12 @@ export default function DisplayCase() {
                   <span className="text-7xl group-hover:scale-110 transition-transform duration-500">
                     {product.image}
                   </span>
-                  {product.fresh && (
+                  {'tuesdaySpecial' in product && (
+                    <Badge className="absolute top-3 right-3 bg-raspberry text-whipped text-[10px] font-semibold px-2 py-0.5 rounded-full animate-pulse">
+                      $1 Tuesday!
+                    </Badge>
+                  )}
+                  {product.fresh && !('tuesdaySpecial' in product) && (
                     <Badge className="absolute top-3 right-3 bg-herbe text-whipped text-[10px] font-semibold px-2 py-0.5 rounded-full animate-pulse">
                       Fresh Today
                     </Badge>

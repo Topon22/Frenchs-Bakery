@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Clock, Car, Navigation } from 'lucide-react';
+import { MapPin, Phone, Clock, Car, Navigation, Star, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const hours = [
@@ -70,7 +70,7 @@ export default function VisitUs() {
                     <span className="text-6xl">🥐</span>
                   </motion.div>
                   <h3 className="font-playfair font-bold text-xl text-espresso mb-1">
-                    French&apos;s Bakery
+                    French&apos;s Pastry & Bakery
                   </h3>
                   <p className="text-sm text-muted-foreground">Mesa-North Shopping Center</p>
                   <p className="text-sm text-muted-foreground">Costa Mesa, CA 92626</p>
@@ -110,7 +110,7 @@ export default function VisitUs() {
                   <div>
                     <p className="font-lora font-semibold text-espresso">Address</p>
                     <p className="text-sm text-muted-foreground">
-                      1170 Baker St, Suite B
+                      1170 W. Baker St, Suite B
                       <br />
                       Costa Mesa, CA 92626
                     </p>
@@ -142,6 +142,34 @@ export default function VisitUs() {
                     <p className="text-sm text-muted-foreground">
                       Free parking available in Mesa-North Shopping Center lot
                     </p>
+                  </div>
+                </div>
+
+                <div className="h-px bg-flaky" />
+
+                <div className="flex items-start gap-3">
+                  <CreditCard className="w-5 h-5 text-brioche shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-lora font-semibold text-espresso">Payment</p>
+                    <p className="text-sm text-muted-foreground">
+                      All major credit cards accepted
+                    </p>
+                    <p className="text-xs text-cafe mt-0.5">Visa • Mastercard • Amex • Discover</p>
+                  </div>
+                </div>
+
+                <div className="h-px bg-flaky" />
+
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-brioche shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-lora font-semibold text-espresso">TripAdvisor</p>
+                    <div className="flex items-center gap-1 mt-0.5">
+                      {[...Array(4)].map((_, j) => (
+                        <Star key={j} className="w-4 h-4 fill-brioche text-brioche" />
+                      ))}
+                    </div>
+                    <p className="text-xs text-cafe mt-0.5">4.0 stars • 13 reviews</p>
                   </div>
                 </div>
               </div>

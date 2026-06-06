@@ -16,7 +16,7 @@ const features = [
     icon: Palette,
     title: 'We Design & Bake',
     description:
-      'Our expert bakers bring your vision to life using premium ingredients and 36 years of artisan expertise.',
+      'Our expert bakers bring your vision to life using premium ingredients and 60 years of artisan expertise.',
   },
   {
     icon: Heart,

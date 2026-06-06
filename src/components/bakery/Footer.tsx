@@ -44,11 +44,11 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-playfair font-bold text-xl text-whipped">French&apos;s</p>
-                <p className="text-xs tracking-[0.3em] uppercase text-brioche-light">Bakery</p>
+                <p className="text-xs tracking-[0.2em] uppercase text-brioche-light">Pastry & Bakery</p>
               </div>
             </div>
             <p className="text-sm text-flaky/70 leading-relaxed mb-4 max-w-xs">
-              Baking fresh in Costa Mesa since 1988. Artisan breads, exquisite pastries, and custom
+              Baking fresh in Costa Mesa since 1965. Artisan breads, exquisite pastries, and custom
               cakes — made from scratch, every morning.
             </p>
             <div className="flex items-center gap-3">
@@ -119,7 +119,7 @@ export default function Footer() {
               >
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-brioche" />
                 <span>
-                  1170 Baker St, Suite B
+                  1170 W. Baker St, Suite B
                   <br />
                   Costa Mesa, CA 92626
                 </span>
@@ -148,7 +148,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-flaky/40 text-center sm:text-left">
-            © {new Date().getFullYear()} French&apos;s Bakery. All rights reserved. Baked with love in
+            © {new Date().getFullYear()} French&apos;s Pastry & Bakery. All rights reserved. Baked with love in
             Costa Mesa.
           </p>
           <div className="flex items-center gap-1 text-xs text-flaky/40">

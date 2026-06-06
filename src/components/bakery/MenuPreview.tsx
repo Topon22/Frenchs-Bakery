@@ -6,21 +6,21 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const bakeryItems = [
-  { name: 'Artisan Breads', items: ['Sourdough Boule', 'Baguette Tradition', 'Rustic Ciabatta', 'Rosemary Focaccia', 'Multigrain Loaf', 'Rye Bread'], emoji: '🍞' },
-  { name: 'Pastries & Croissants', items: ['Butter Croissant', 'Pain au Chocolat', 'Almond Croissant', 'Pain aux Raisins', 'Danish Pastry', 'Kouign-Amann'], emoji: '🥐' },
-  { name: 'Coffeecakes', items: ['Wagon-Wheel (40+ Flavors)', 'Coffee Ring', 'Babka', 'Cinnamon Roll Cake', 'Streusel Kuchen'], emoji: '🍰' },
-  { name: 'Cookies & Bars', items: ['French Macarons', 'Butter Cookies', 'Brownies', 'Lemon Bars', 'Palmiers', 'Tuiles'], emoji: '🍪' },
+  { name: 'Wagon Wheels', items: ['Cinnamon', 'Blueberry', 'Pecan', 'Cream Cheese', 'Chocolate Chip', '40+ Flavors Available'], emoji: '🍰' },
+  { name: 'Danishes', items: ['Cheese Danish', 'Apple Danish', 'Cherry Danish', 'Apricot Danish', 'Blueberry Danish'], emoji: '🥐' },
+  { name: 'French Breads', items: ['French Bread Loaf', 'Baguette', 'Sourdough Boule', 'Rustic Ciabatta', 'Rosemary Focaccia'], emoji: '🥖' },
+  { name: 'Cookies & Bars', items: ['Butter Cookies', 'Chocolate Chip', 'Oatmeal Raisin', 'Brownies', 'Lemon Bars', 'Palmiers'], emoji: '🍪' },
 ];
 
 const dessertItems = [
-  { name: 'Layer Cakes', items: ['Chocolate Ganache', 'Red Velvet', 'Carrot Cake', 'Lemon Raspberry', 'Tiramisu', 'Coconut Cake'], emoji: '🎂' },
-  { name: 'Tarts & Pies', items: ['Lemon Tart', 'Fruit Tart', 'Chocolate Tart', 'Apple Tart Tatin', 'Pear Almond Tart'], emoji: '🥧' },
-  { name: 'Individual Desserts', items: ['Crème Brûlée', 'Chocolate Mousse', 'Panna Cotta', 'Profiteroles', 'Île Flottante', 'Mille-Feuille'], emoji: '🍮' },
+  { name: 'Layer Cakes', items: ['Carrot Cake', 'German Chocolate Cake', 'Red Velvet', 'Chocolate Ganache', 'Lemon Raspberry', 'Coconut Cake'], emoji: '🎂' },
+  { name: 'Tarts & Pies', items: ['Fruit Tart', 'Lemon Tart', 'Chocolate Tart', 'Apple Tart Tatin', 'Pear Almond Tart'], emoji: '🥧' },
+  { name: 'Individual Desserts', items: ['Crème Brûlée', 'Chocolate Mousse', 'Panna Cotta', 'Profiteroles', 'Éclairs', 'Mille-Feuille'], emoji: '🍮' },
 ];
 
 const restaurantItems = [
-  { name: 'French-Inspired', items: ['Croque Monsieur', 'Quiche Lorraine', 'French Onion Soup', 'Niçoise Salad', 'Ratatouille Tartine'], emoji: '🇫🇷' },
-  { name: 'Breakfast & Brunch', items: ['Omelette du Jour', 'Avocado Toast on Sourdough', 'French Toast with Berries', 'Eggs Benedict on English Muffin', 'Crêpes Suzette'], emoji: '🍳' },
+  { name: 'French-Inspired', items: ['French Onion Soup', 'Croque Monsieur', 'Quiche Lorraine', 'Niçoise Salad', 'Ratatouille Tartine'], emoji: '🇫🇷' },
+  { name: 'Breakfast & Brunch', items: ['Omelette du Jour', 'Avocado Toast on Sourdough', 'French Toast with Berries', 'Quiche of the Day', 'Crêpes Suzette'], emoji: '🍳' },
   { name: 'Daily Specials', items: ['Chef\'s Daily Soup', 'Seasonal Salad', 'Hot Special Entrée', 'See chalkboard for today\'s selection'], emoji: '📋' },
 ];
 

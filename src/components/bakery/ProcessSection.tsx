@@ -30,9 +30,9 @@ const steps = [
   },
   {
     icon: Heart,
-    title: 'Made with 36 Years of Love',
+    title: 'Made with 60 Years of Love',
     description: 'Every item carries decades of baking tradition, community trust, and genuine care.',
-    time: 'Since 1988',
+    time: 'Since 1965',
   },
 ];
 

@@ -90,11 +90,10 @@ export default function WagonWheel() {
             ★ Our Signature ★
           </Badge>
           <h2 className="font-playfair font-bold text-3xl sm:text-4xl md:text-5xl text-espresso mb-4">
-            The Wagon-Wheel Coffeecake
+            Famous Wagon Wheels
           </h2>
           <p className="font-cormorant italic text-xl text-cafe max-w-2xl mx-auto">
-            A Costa Mesa legend since 1988 — available in over 40 incredible flavors. Baked fresh to
-            order.
+            A Costa Mesa legend since 1965 — our 12-inch round coffeecake available in over 40 incredible flavors. Starting at $13.98, serves 10–12.
           </p>
         </motion.div>
 

@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 
 const milestones = [
-  { year: '1988', event: 'French\'s Bakery opens its doors in Costa Mesa\'s Mesa-North Shopping Center' },
-  { year: '1992', event: 'The Wagon-Wheel Coffeecake becomes a local phenomenon' },
-  { year: '1998', event: 'Expanded to offer full restaurant dining alongside the bakery' },
-  { year: '2005', event: 'Introduced "Bring Your Recipe" — custom baking from family recipes' },
-  { year: '2015', event: 'Wagon-Wheel Coffeecake flavor count surpasses 40 varieties' },
-  { year: '2024', event: '36 years and still baking fresh every morning — a Costa Mesa institution' },
+  { year: '1965', event: 'French\'s Pastry opens its doors in Costa Mesa\'s Mesa-North Shopping Center' },
+  { year: '1972', event: 'The Wagon Wheel Coffeecake becomes a local phenomenon' },
+  { year: '1985', event: 'Expanded to offer full restaurant dining alongside the bakery' },
+  { year: '1998', event: 'Introduced "Bring Your Recipe" — custom baking from family recipes' },
+  { year: '2010', event: 'Wagon Wheel Coffeecake flavor count surpasses 40 varieties' },
+  { year: '2024', event: '60 years and still baking fresh every morning — a Costa Mesa institution' },
 ];
 
 export default function Community() {
@@ -31,10 +31,10 @@ export default function Community() {
             transition={{ duration: 0.7 }}
           >
             <Badge className="bg-brioche/20 text-brioche-light border-brioche/30 mb-6 font-caveat text-lg px-4">
-              Est. 1988
+              Est. 1965
             </Badge>
             <h2 className="font-playfair font-bold text-3xl sm:text-4xl md:text-5xl text-whipped mb-6 leading-tight">
-              36 Years of Baking Fresh in Costa Mesa
+              60 Years of Baking Fresh in Costa Mesa
             </h2>
             <div className="space-y-4 text-flaky/70 leading-relaxed">
               <p className="font-cormorant italic text-xl text-brioche-light">
@@ -47,8 +47,8 @@ export default function Community() {
                 in the world.
               </p>
               <p>
-                For over 36 years, Costa Mesa has agreed. Our ovens have been warm every single
-                morning since 1988, and our commitment to freshness, quality, and community has
+                For over 60 years, Costa Mesa has agreed. Our ovens have been warm every single
+                morning since 1965, and our commitment to freshness, quality, and community has
                 never wavered.
               </p>
             </div>

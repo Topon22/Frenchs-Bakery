@@ -45,8 +45,8 @@ export default function Header() {
               <span className="font-playfair font-bold text-lg sm:text-xl text-espresso leading-tight">
                 French&apos;s
               </span>
-              <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-cafe font-semibold -mt-0.5">
-                Bakery
+              <span className="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-cafe font-semibold -mt-0.5">
+                Pastry & Bakery
               </span>
             </div>
           </a>
@@ -109,7 +109,7 @@ export default function Header() {
                       </div>
                       <div>
                         <p className="font-playfair font-bold text-espresso">French&apos;s</p>
-                        <p className="text-xs tracking-widest uppercase text-cafe">Bakery</p>
+                        <p className="text-xs tracking-wider uppercase text-cafe">Pastry & Bakery</p>
                       </div>
                     </div>
                   </div>

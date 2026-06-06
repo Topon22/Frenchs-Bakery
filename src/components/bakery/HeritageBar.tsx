@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { Award, Clock, Flame, Heart } from 'lucide-react';
 
 const stats = [
-  { icon: Clock, label: 'Years Baking Fresh', value: '36+' },
+  { icon: Clock, label: 'Years Baking Fresh', value: '60+' },
   { icon: Flame, label: 'Baking From Scratch', value: 'Daily' },
-  { icon: Award, label: 'Coffeecake Flavors', value: '40+' },
-  { icon: Heart, label: 'Happy Customers', value: '∞' },
+  { icon: Award, label: 'Wagon Wheel Flavors', value: '40+' },
+  { icon: Heart, label: 'Tuesday Cupcakes', value: '$1' },
 ];
 
 export default function HeritageBar() {

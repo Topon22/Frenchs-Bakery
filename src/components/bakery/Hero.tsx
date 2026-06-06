@@ -53,7 +53,7 @@ export default function Hero() {
         >
           <Sparkles className="w-4 h-4 text-brioche-light" />
           <span className="text-sm font-lora font-semibold text-brioche-light tracking-wide">
-            Baking Fresh in Costa Mesa Since 1988
+Baking Fresh in Costa Mesa Since 1965
           </span>
         </motion.div>
 
@@ -76,8 +76,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7 }}
           className="font-cormorant italic text-xl sm:text-2xl md:text-3xl text-flaky/80 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          From flaky butter croissants to legendary Wagon-Wheel Coffeecakes — made from scratch
-          with 36 years of love.
+          From artisan pastries and fresh-baked cookies to legendary Wagon Wheels — made from scratch
+          with 60 years of love.
         </motion.p>
 
         {/* CTAs */}

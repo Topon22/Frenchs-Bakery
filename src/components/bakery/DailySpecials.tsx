@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 
 const specials = [
-  { name: 'Almond Croissant', price: '$3.50', emoji: '🥐', tag: 'Best Seller' },
-  { name: 'Strawberry Coffeecake', price: '$18.00', emoji: '🍰', tag: 'Seasonal' },
-  { name: 'Rosemary Sea Salt Boule', price: '$9.00', emoji: '🍞', tag: 'New' },
-  { name: 'Seasonal Fruit Tart', price: '$6.50', emoji: '🥧', tag: 'Limited' },
-  { name: 'Pain au Chocolat', price: '$3.75', emoji: '🍫', tag: 'Classic' },
-  { name: 'Vanilla Bean Éclair', price: '$5.25', emoji: '🧁', tag: 'Fresh' },
+  { name: '$1 Cupcakes on Tuesday!', price: '$1.00', emoji: '🧁', tag: 'Tuesday Special', featured: true },
+  { name: 'Cheese Danish', price: '$3.95', emoji: '🥐', tag: 'Best Seller' },
+  { name: 'Wagon Wheel Coffeecake', price: '$13.98+', emoji: '🍰', tag: 'Signature' },
+  { name: 'Carrot Cake Slice', price: '$5.50', emoji: '🥕', tag: 'Favorite' },
+  { name: 'French Bread', price: '$4.50', emoji: '🥖', tag: 'Fresh Baked' },
+  { name: 'Cookies (per dozen)', price: '$12.00', emoji: '🍪', tag: 'Classic' },
 ];
 
 export default function DailySpecials() {
@@ -71,7 +71,7 @@ export default function DailySpecials() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.4 }}
-                className="flex items-center justify-between gap-4 group"
+                className={`flex items-center justify-between gap-4 group ${'featured' in item && item.featured ? 'bg-raspberry/15 -mx-3 px-3 py-2 rounded-lg' : ''}`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-2xl sm:text-3xl">{item.emoji}</span>
