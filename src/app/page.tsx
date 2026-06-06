@@ -11,6 +11,7 @@ import MenuPreview from '@/components/bakery/MenuPreview';
 import CustomCakes from '@/components/bakery/CustomCakes';
 import ProcessSection from '@/components/bakery/ProcessSection';
 import Community from '@/components/bakery/Community';
+import CompetitiveEdge from '@/components/bakery/CompetitiveEdge';
 import Testimonials from '@/components/bakery/Testimonials';
 import VisitUs from '@/components/bakery/VisitUs';
 import Footer from '@/components/bakery/Footer';
@@ -40,6 +41,7 @@ export default function Home() {
         <CustomCakes />
         <ProcessSection />
         <Community />
+        <CompetitiveEdge />
         <Testimonials />
         <VisitUs />
       </main>

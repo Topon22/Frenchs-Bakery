@@ -40,29 +40,31 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "French's Pastry & Bakery — Baked Fresh in Costa Mesa Since 1965",
+  title: "French's Pastry & Bakery — Baked Fresh in Costa Mesa Since 1989",
   description:
-    "Artisan pastries, fresh-baked cookies, custom cakes, and legendary Wagon Wheels — made from scratch every morning. Over 60 years baking fresh in Costa Mesa. Try our famous Wagon Wheel Coffeecake in 40+ flavors.",
+    "Artisan pastries, fresh-baked cookies, custom cakes, and legendary Wagon Wheels — made from scratch every morning. 36 years baking fresh in Costa Mesa. Try our famous Wagon Wheel Coffeecake in 40+ flavors. Delivery available on GrubHub & DoorDash.",
   keywords: [
     "French bakery Costa Mesa",
     "custom cakes Costa Mesa CA",
     "fresh baked pastries near me 92626",
     "coffeecake Costa Mesa",
     "Wagon Wheel Coffeecake",
-    "bakery Mesa-North Shopping Center",
+    "bakery 1170 Baker St",
     "best Cheese Danishes Costa Mesa",
     "French's Pastry & Bakery",
     "artisan bread Orange County",
     "bring your own recipe bakery",
+    "$1 Tuesday cupcakes Costa Mesa",
+    "bakery delivery Costa Mesa GrubHub DoorDash",
   ],
   authors: [{ name: "French's Pastry & Bakery" }],
   icons: {
     icon: "/logo.svg",
   },
   openGraph: {
-    title: "French's Pastry & Bakery — Baked Fresh in Costa Mesa Since 1965",
+    title: "French's Pastry & Bakery — Baked Fresh in Costa Mesa Since 1989",
     description:
-      "Artisan pastries, fresh-baked cookies, custom cakes, and legendary Wagon Wheels — made from scratch every morning.",
+      "Artisan pastries, fresh-baked cookies, custom cakes, and legendary Wagon Wheels — made from scratch every morning. 36 years of love.",
     type: "website",
     locale: "en_US",
   },
